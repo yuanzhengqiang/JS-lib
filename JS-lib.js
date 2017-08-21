@@ -56,6 +56,14 @@ class JS_lib {
 	    }
 	}
 
+	/**
+	 * 显示星星数
+	 * rate: 需要显示星数
+	 */
+	showStar(rate) {
+		return "★★★★★☆☆☆☆☆".slice(5 - rate, 10 - rate);
+	}
+
 	/*字符串循环复制
 	str: 字符串
 	count: 次数
